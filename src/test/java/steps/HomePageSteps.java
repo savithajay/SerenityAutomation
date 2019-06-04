@@ -14,5 +14,10 @@ public class HomePageSteps {
 	        homePage.open();
 	        Assert.assertTrue("Home page is not loaded", homePage.verifyHomePage());
 	    }
+	    
+	    @Step
+	    public void gotoGiftCardsPage() {
+	    	homePage.selectGiftCardsLink();
+	    }
 
 }

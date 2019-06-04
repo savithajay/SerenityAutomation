@@ -12,8 +12,17 @@ public class HomePage extends PageObject {
 
 	 @FindBy(xpath = "//a[@class='nav-logo-link']")
 	    WebElement logoLink;
+	 	 
+	 @FindBy(xpath = "//a[contains(., 'Gift Cards')]")
+	    WebElement giftCardsLink;
 	 
 	 public boolean verifyHomePage() {
 		 return logoLink.isDisplayed();
+	 }
+	 
+	 public void selectGiftCardsLink() {
+		 if(verifyHomePage()) {
+			 giftCardsLink.click();
+		 }
 	 }
 }
