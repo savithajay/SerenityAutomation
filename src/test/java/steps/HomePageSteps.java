@@ -20,4 +20,14 @@ public class HomePageSteps {
 	    	homePage.selectGiftCardsLink();
 	    }
 
+	    @Step
+	    public void searchThis(String searchStr) {
+	    	homePage.searchSomething(searchStr);
+	    }
+	    
+	    @Step
+	    public void selectItem() {
+	    	homePage.selectAnItem();
+	    }
+	    
 }
